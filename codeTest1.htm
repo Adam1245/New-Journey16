@@ -1,0 +1,71 @@
+<script type="text/javascript">
+<!--
+var age, originalPrice, employee, contractor, M1, M2, M3, M4, M5, M6, M7;
+var discAmount, subtotal, taxAmount, finalAmount;
+//assignment
+var employeeRate = .05;
+var contractorRate = .25;
+var taxRate = .06;
+var largeOrderDisc = .10;
+var largeOrder = 500;
+var ageCutoff = 90;
+
+//input
+age = prompt("What is your age? (only the number ex:50)","");
+originalPrice = prompt("What is the price?"," ");
+employee = prompt("Are you an employee? (yes/no)","");
+contractor = prompt("Are you a contractor? (yes/no)","");
+//calculations
+if (age > ageCutoff)
+{
+ M6 = 0;
+}
+else
+{
+ M6 = taxRate;
+ }
+
+if (employee == "yes")
+{
+ M3 = employeeRate;
+ 
+ if (originalPrice > largeOrder)
+ {
+  M3 = largeOrderDisc;
+	}
+ else if (contractor == "yes")
+ {
+  M3 = contractorRate;
+	}
+
+if (originalPrice > largeOrder)
+ {
+  M3 = contractorRate;
+	}
+else if (originalPrice > largeOrder)
+{
+ M3 = employeeRate;
+}
+}//end of statement
+else
+{
+ M3 = largeOrderDisc;
+}
+
+M1 = originalPrice;
+tax = M6;
+
+M2 = M1*M3;
+M4 = M1-M2;
+M5 = M4*M6;
+M7 = M4+M5;
+
+
+//output
+document.write("Original price is $" + M1);
+document.write("<br>discount amount is $" + M2);
+document.write("<br>subtotal amount is $" + M4);
+document.write("<br>Tax amount is $" + M5);
+document.write("<br>final amount is $" + M7);
+// -->
+</script>

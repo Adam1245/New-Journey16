@@ -1,0 +1,45 @@
+<script type="text/javascript">
+<!--
+var WM
+var CNT
+var HDM
+var TMA
+var TWM
+var TCNT
+var THDM
+WM=5;
+CNT=8;
+HDM=10;
+var dis=.1
+//input
+WM
+CNT
+HDM  
+TWM  =prompt("I know you got some water melons, how many do you have? i know you do, its that time of season!!?");
+TCNT =prompt("how many Cantelope do you have?? hmmm?? tell me??");
+THDM =prompt("how many Honey Dew melons do you have?");
+
+//caculations
+var melons= TWM*1+TCNT*1+THDM*1
+var TWA= WM*TWM
+var TC=CNT*TCNT
+var TH=HDM*THDM
+var totmt=TWA+TC+TH
+var DC
+if ( melons>=10)
+{ DC= dis*totmt}
+else {DC=0}
+var OT
+OT= totmt-DC
+//output
+document.write("You bought "+TWM+ " watermelons<br>")
+document.write("You bought "+TCNT+ " Cantalopes<br>")
+document.write("You bought "+THDM+ " Honey Dew melons<br>") 
+document.write("You bought "+melons+ "  melons all together <br>" )
+document.write("Your subtotal is $"+totmt+"<br>") 
+document.write("You got $"+DC+ " off your purchase yeah!! <br>")
+document.write ("Your total today sir or ma'am is $"+OT+" have a good day.")
+
+
+// -->
+</script>

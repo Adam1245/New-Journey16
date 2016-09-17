@@ -1,0 +1,28 @@
+<script type="text/javascript">
+<!--
+var FIFTY = 50;
+var ONE = 100;
+var TWO = 200;
+var FPB = prompt("What is the quantity of 50 lb bags?"," ");
+var OPB = prompt("What is the quantity of 100 lb bags?"," ");
+var TPB = prompt("What is the quantity of 200 lb bags?"," ");
+var WFPB
+var WOPB
+var WTPB
+var WOAB
+
+FPB = parseInt(FPB);
+OPB = parseInt(OPB);
+TPB = parseInt(TPB);
+
+WFPB = FPB*FIFTY
+WOPB = OPB*ONE
+WTPB = TPB*TWO
+WOAB = WFPB+WOPB+WTPB
+
+document.write ("The total weight in 50 lb bags is " + WFPB)
+document.write ("<br>The total weight in 100 lb bags is " + WOPB)
+document.write ("<br>The total weight in 200 lb bags is " + WTPB)
+document.write ("<br>The total weight of all bags is " + WOAB)
+// -->
+</script>

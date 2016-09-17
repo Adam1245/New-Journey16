@@ -1,0 +1,49 @@
+<script type="text/javascript">
+<!--
+var groomSide, brideSide, brideAccum, groomAccum;
+var brideCounter = 0;
+var groomCounter = 0;
+//initialize the loop
+var moreGuests = "yes";
+//start loop
+while (moreGuests == "yes")
+{
+  guestName = prompt("Name?", "");
+  gift =  prompt("What is the gift?", "");
+  side = prompt("Which side? groom/bride", ""); 
+   if (side == "bride")
+	 {
+	 brideCounter = brideCounter + 1;
+	  if (brideCounter == 1)
+		{
+		brideAccum = "Bride side: " + brideCounter + ".  " + guestName + ":  " + gift;
+		}
+		else
+		{
+		brideAccum = brideAccum + "<br>" + brideCounter + ".  " + guestName + ":  " + gift;
+		}
+		alert(brideAccum)
+		}
+    else
+		 {
+		  groomCounter = groomCounter + 1;
+	    if (groomCounter == 1)
+		  {
+		  groomAccum = "<p>Groom side: " + groomCounter + ".  " + guestName + ":  " + gift;
+		  }
+		  else
+		  {
+		  groomAccum = groomAccum + "<br>" + groomCounter + ".  " + guestName + ":  " + gift;
+		  }
+		  alert(groomAccum)
+		  }
+			
+      moreGuests = prompt("Are there any more guests?", "yes");
+}//end of loop
+alert("Done looping")
+document.write(brideAccum);
+document.write(groomAccum);
+
+// -->
+</script>
+ 
